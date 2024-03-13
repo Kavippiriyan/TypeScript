@@ -46,3 +46,29 @@
 // console.log(obj1);
 // console.log(obj1.name+" age is "+obj1.age);
 
+
+// ***(dynamic type -- any)***
+
+
+let value : any 
+value ="hello"
+value = 2
+console.log(value);
+
+
+let arr : any[] = [1,true,"hi"]
+
+console.log(arr);
+
+
+let obj :
+{
+    sentence:any
+    length:any
+
+}
+
+
+obj = {sentence:"hello world",length:11}
+
+console.log(obj);
