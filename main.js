@@ -116,11 +116,31 @@
 //     }
 // }
 // --- access modifiers ---
+// class test
+// {
+//     constructor (private x:number,public y:number,public z:number)
+//     {
+//     }
+//     private fun = ():any =>
+//     {
+//         console.log(this.x);
+//         console.log(this.y);
+//         console.log(this.z);
+//     }
+//     function = ():any=>
+//     {
+//         this.fun()
+//     }
+// }
+// const object = new test(1,2,3)
+// // object.fun()
+//                      // we can't access beacuase of private
+// // object.x = 20 
+// object.y=30
+// object.function()
+// ------   get,  set  ------
 var test = /** @class */ (function () {
     function test(x, y, z) {
-        // this.x=x
-        // this.y=y
-        // this.z=z
         var _this = this;
         this.x = x;
         this.y = y;
@@ -134,6 +154,16 @@ var test = /** @class */ (function () {
             _this.fun();
         };
     }
+    Object.defineProperty(test.prototype, "X", {
+        get: function () {
+            return this.x;
+        },
+        set: function (value) {
+            this.x = value;
+        },
+        enumerable: false,
+        configurable: true
+    });
     return test;
 }());
 var object = new test(1, 2, 3);
@@ -142,3 +172,6 @@ var object = new test(1, 2, 3);
 // object.x = 20 
 object.y = 30;
 object.function();
+console.log(object.X);
+object.X = 30;
+console.log(object.X);
