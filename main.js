@@ -1,7 +1,9 @@
+"use strict";
 // function Welcome() {
 //     console.log("Hello World");
 // }
 // Welcome();
+Object.defineProperty(exports, "__esModule", { value: true });
 // let fname= "kavippiriyan"
 // console.log(fname);
 // let age;
@@ -139,39 +141,41 @@
 // object.y=30
 // object.function()
 // ------   get,  set  ------
-var test = /** @class */ (function () {
-    function test(x, y, z) {
-        var _this = this;
-        this.x = x;
-        this.y = y;
-        this.z = z;
-        this.fun = function () {
-            console.log(_this.x);
-            console.log(_this.y);
-            console.log(_this.z);
-        };
-        this.function = function () {
-            _this.fun();
-        };
-    }
-    Object.defineProperty(test.prototype, "X", {
-        get: function () {
-            return this.x;
-        },
-        set: function (value) {
-            this.x = value;
-        },
-        enumerable: false,
-        configurable: true
-    });
-    return test;
-}());
-var object = new test(1, 2, 3);
-// object.fun()
-// we can't access beacuase of private
-// object.x = 20 
-object.y = 30;
-object.function();
-console.log(object.X);
-object.X = 30;
-console.log(object.X);
+// class test
+// {
+//     constructor (private x:number,public y:number,public z:number)
+//     {
+//     }
+//     private fun = ():any =>
+//     {
+//         console.log(this.x);
+//         console.log(this.y);
+//         console.log(this.z);
+//     }
+//     function = ():any=>
+//     {
+//         this.fun()
+//     }
+//     get X()
+//     {
+//         return this.x
+//     }
+//     set X(value)
+//     {
+//         this.x=value
+//     }
+// }
+// const object = new test(1,2,3)
+// // object.fun()
+//                      // we can't access beacuase of private
+// // object.x = 20 
+// object.y=30
+// object.function()
+// console.log("Get value "+object.X);
+// object.X = 30;
+// console.log("Set value "+object.X);
+var module_1 = require("./module");
+var obj = new module_1.student1();
+console.log(obj.name);
+console.log(obj.age);
+console.log(obj.work);

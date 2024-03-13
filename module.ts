@@ -1,4 +1,4 @@
-class student 
+export class student1 
 {
     name = "kavippiriyan"
     age = 22
