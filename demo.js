@@ -29,12 +29,47 @@
 // console.log(obj1);
 // console.log(obj1.name+" age is "+obj1.age);
 // ***(dynamic type -- any)***
-var value;
-value = "hello";
-value = 2;
-console.log(value);
-var arr = [1, true, "hi"];
-console.log(arr);
-var obj;
-obj = { sentence: "hello world", length: 11 };
-console.log(obj);
+// let value : any 
+// value ="hello"
+// value = 2
+// console.log(value);
+// let arr : any[] = [1,true,"hi"]
+// console.log(arr);
+// let obj :
+// {
+//     sentence:any
+//     length:any
+// }
+// obj = {sentence:"hello world",length:11}
+// console.log(obj);
+// *** (functions) ***
+var funct = function () {
+    console.log("Hello World");
+};
+funct();
+var demo;
+demo = function () {
+    console.log("Good Evening");
+};
+demo();
+var test = function (a, b) {
+    return a + b;
+};
+console.log(test(1, "way"));
+var practice = function (a, b, c) {
+    console.log(a + b + c);
+};
+practice(1, 2);
+practice(1, 2, 3);
+var fun = function (a, b) {
+    if (b === void 0) { b = 10; }
+    return (a + b);
+};
+console.log(fun(1));
+console.log(fun(1, 4));
+var fun1 = function (a, b) {
+    if (b === void 0) { b = "hello"; }
+    console.log(a + b);
+};
+fun1(1);
+fun1(1, "hi");
