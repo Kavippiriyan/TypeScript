@@ -154,50 +154,96 @@
 // console.log(typeof a);
 // *** (operators) ***
 //  arithmatic
-var a = 10;
-var b = 20;
-console.log(a + b);
-console.log(a - b);
-console.log(a * b);
-console.log(a / b);
-console.log(Math.pow(a, b));
-console.log(a % b);
-//  assignment
-var c = 10;
-var d = 20;
-console.log(a = b);
-console.log(a += b);
-console.log(a -= b);
-console.log(a /= b);
-console.log(a = Math.pow(a, b));
-console.log(a %= b);
-//   Relational / comparision
-var e = 10;
-var f = 20;
-console.log(a > b);
-console.log(a < b);
-console.log(a >= b);
-console.log(a <= b);
-console.log(a == b);
-console.log(a === b);
-console.log(a != b);
-console.log(a !== b);
-//   ternary operators
-var g = 10;
-var h = 20;
-console.log(g > h ? true : false);
-//  logical operators
-var num = true;
-var num1 = false;
-console.log(num || num1);
-console.log(num && num1);
-console.log(!num1);
-console.log(!num);
-//  unary operators
-var x = 10;
-var variable = x++;
-console.log(x);
-console.log(variable);
-var variable1 = ++x;
-console.log(variable1);
-console.log(x);
+// let a=10
+// let b=20
+// console.log(a+b);
+// console.log(a-b);
+// console.log(a*b);
+// console.log(a/b);
+// console.log(a**b);
+// console.log(a%b);
+// //  assignment
+// let c=10
+// let d=20
+// console.log(a=b);
+// console.log(a+=b);
+// console.log(a-=b);
+// console.log(a/=b);
+// console.log(a**=b);
+// console.log(a%=b);
+// //   Relational / comparision
+// let e=10
+// let f=20
+// console.log(a>b);
+// console.log(a<b);
+// console.log(a>=b);
+// console.log(a<=b);
+// console.log(a==b);
+// console.log(a===b);
+// console.log(a!=b);
+// console.log(a!==b);
+// //   ternary operators
+// let g=10
+// let h=20
+// console.log(g>h?true:false);
+// //  logical operators
+// let num =true;
+// let num1 = false;
+// console.log(num||num1);
+// console.log(num&&num1);
+// console.log(!num1);
+// console.log(!num);
+// //  unary operators
+// let x=10
+// let variable = x++;
+// console.log(x);
+// console.log(variable);
+// let variable1 = ++x
+// console.log(variable1);
+// console.log(x);
+//  ** (string) **
+// var word = "Good Evening"
+// var word1 = " all"
+// var word2 = " of you"
+// console.log("charAt(0) : "+word.charAt(0));
+// console.log("charCodeAt(1) : "+word.charCodeAt(1));
+// console.log("concat : "+word.concat(word1).concat(word2));
+// console.log("replace : "+word.replace("Evening","Noon"));
+// console.log("split : "+word.split(" "));
+// console.log("split : "+word.split(" ",1));
+// console.log(word2.substring(1,5));
+// console.log("toUpperCase : "+word1.toUpperCase());
+// console.log("toLowerCase : "+word2.toLowerCase());
+// console.log("trim : "+word1.trim());
+// ** (Number) **
+// let number:number
+// number =10
+// number = parseInt("25")
+// number = 10.2
+// number = Infinity*2
+// console.log(number);
+//   Condtional statements  
+/* 1. if else  2. switch  3. ternary  */
+var num = 1000;
+var num2 = 0;
+var num3 = -1;
+var largest = num;
+var smallest = num;
+if (largest < num2 && num3 < num2) {
+    largest = num2;
+}
+else if (largest < num3 && num3 > num2) {
+    largest = num3;
+}
+else if (smallest > num2 && num2 < num3) {
+    smallest = num2;
+}
+else if (smallest > num3 && num3 < num2) {
+    smallest = num3;
+}
+else {
+    smallest = num;
+    largest = num;
+}
+console.log("smallest value : " + smallest);
+console.log("largest value : " + largest);

@@ -346,3 +346,74 @@
 // let variable1 = ++x
 // console.log(variable1);
 // console.log(x);
+
+
+
+//  ** (string) **
+
+
+// var word = "Good Evening"
+// var word1 = " all"
+// var word2 = " of you"
+
+// console.log("charAt(0) : "+word.charAt(0));
+// console.log("charCodeAt(1) : "+word.charCodeAt(1));
+// console.log("concat : "+word.concat(word1).concat(word2));
+// console.log("replace : "+word.replace("Evening","Noon"));
+// console.log("split : "+word.split(" "));
+// console.log("split : "+word.split(" ",1));
+// console.log(word2.substring(1,5));
+// console.log("toUpperCase : "+word1.toUpperCase());
+// console.log("toLowerCase : "+word2.toLowerCase());
+// console.log("trim : "+word1.trim());
+
+
+
+// ** (Number) **
+
+// let number:number
+// number =10
+// number = parseInt("25")
+// number = 10.2
+// number = Infinity*2
+// console.log(number);
+
+
+
+//   Condtional statements  
+
+/* 1. if else  2. switch  3. ternary  */
+
+
+// let num = 1000 
+// let num2 =0 
+//  let num3 = -1
+
+// let largest = num
+// let smallest = num
+
+
+// if(largest<num2 && num3<num2)
+// {
+//     largest=num2
+// }
+// else if (largest<num3 && num3>num2)
+// {
+//     largest = num3
+// }
+// else if (smallest>num2 && num2<num3)
+// {
+//     smallest=num2
+// }
+// else if (smallest>num3 && num3<num2)
+// {
+//     smallest=num3
+// }
+// else
+// {
+//     smallest=num
+//     largest=num
+// }
+
+// console.log("smallest value : "+smallest);
+// console.log("largest value : "+largest);
