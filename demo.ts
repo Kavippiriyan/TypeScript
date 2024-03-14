@@ -422,39 +422,65 @@
 //   switch
 
 
-var username = "praveen"
+// var username = "praveen"
 
-username = "kesavan"
-username = "naveen"
-username = "sankar"
-username = "arun"
-username = "mohan"
+// username = "kesavan"
+// username = "naveen"
+// username = "sankar"
+// username = "arun"
+// username = "mohan"
 
 
-switch(true)
-{
-    case(username.charAt(0)=="p"):
-    console.log("My name is praveen");
-    break;
+// switch(true)
+// {
+//     case(username.charAt(0)=="p"):
+//     console.log("My name is praveen");
+//     break;
 
-    case(username.charAt(0)=="k"):
-    console.log("My name is kesavan");
-    break;
+//     case(username.charAt(0)=="k"):
+//     console.log("My name is kesavan");
+//     break;
 
-    case(username.charAt(0)=="s"):
-    console.log("My name is sankar");
-    break;
+//     case(username.charAt(0)=="s"):
+//     console.log("My name is sankar");
+//     break;
 
-    case(username.charAt(0)=="n"):
-    console.log("My name is naveen");
-    break;
+//     case(username.charAt(0)=="n"):
+//     console.log("My name is naveen");
+//     break;
 
-    case(username.charAt(0)=="a"):
-    console.log("My name is arun");
-    break;
+//     case(username.charAt(0)=="a"):
+//     console.log("My name is arun");
+//     break;
 
-    default:
-        console.log("I'm mohan");
+//     default:
+//         console.log("I'm mohan");
         
+    
+// }
+
+
+// loops
+
+
+// var i =1
+
+// while(i<=10)
+// {
+//     console.log(i);
+//     i++
+  
+// }
+
+// do 
+// {
+//     console.log(i);
+//     i++
+    
+// }while(i<=10)
+
+
+for(let i=0;i<=10;i++)
+{
     
 }
