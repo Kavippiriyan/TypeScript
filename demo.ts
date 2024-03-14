@@ -156,3 +156,38 @@
 // }
 
 // fun("kavippiriyan",22)
+
+
+
+// *** (Function Signature) ***
+
+
+// let student:()=>number
+
+// student =()=>
+// {
+//     return 5
+// }
+// console.log(student());
+
+
+// let func:(a:string,b:string)=>string
+
+// func = (fname:string,lname:string)=>
+// {
+//     return fname+lname
+// }
+
+// console.log(func("kavi ","s"));
+
+
+// let fun : (a:boolean,b:string)=>void
+
+// fun = (a:boolean,b:string)=>
+// {
+//     console.log(a+b);
+
+    
+// }
+
+// fun(true," soul")
