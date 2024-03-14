@@ -191,3 +191,41 @@
 // }
 
 // fun(true," soul")
+
+
+//  *** (class) ***
+
+
+class student 
+{
+    readonly name:string
+    age:number
+
+
+    constructor (n:string,a:number)
+    {
+        this.name=n
+        this.age=a
+    }
+
+    return()
+    {
+            return `${this.name} age is ${this.age}`
+    }
+}
+
+
+let obj = new student("sam",22)
+let obj1 = new student("peter",30)
+console.log(obj.return());
+console.log(obj1.return());
+
+
+let arr: student[]=[]
+
+arr.push(obj)
+arr.push(obj1)
+
+console.log(arr);
+
+// obj.name = "tiger" // We can't assign any values because of readonly

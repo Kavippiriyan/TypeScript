@@ -90,18 +90,40 @@
 // }
 // fun("kavippiriyan",22)
 // *** (Function Signature) ***
-var student;
-student = function () {
-    return 5;
-};
-console.log(student());
-var func;
-func = function (fname, lname) {
-    return fname + lname;
-};
-console.log(func("kavi ", "s"));
-var fun;
-fun = function (a, b) {
-    console.log(a + b);
-};
-fun(true, " soul");
+// let student:()=>number
+// student =()=>
+// {
+//     return 5
+// }
+// console.log(student());
+// let func:(a:string,b:string)=>string
+// func = (fname:string,lname:string)=>
+// {
+//     return fname+lname
+// }
+// console.log(func("kavi ","s"));
+// let fun : (a:boolean,b:string)=>void
+// fun = (a:boolean,b:string)=>
+// {
+//     console.log(a+b);
+// }
+// fun(true," soul")
+//  *** (class) ***
+var student = /** @class */ (function () {
+    function student(n, a) {
+        this.name = n;
+        this.age = a;
+    }
+    student.prototype.return = function () {
+        return "".concat(this.name, " age is ").concat(this.age);
+    };
+    return student;
+}());
+var obj = new student("sam", 22);
+var obj1 = new student("peter", 30);
+console.log(obj.return());
+console.log(obj1.return());
+var arr = [];
+arr.push(obj);
+arr.push(obj1);
+console.log(arr);
