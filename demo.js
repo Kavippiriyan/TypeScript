@@ -109,21 +109,87 @@
 // }
 // fun(true," soul")
 //  *** (class) ***
-var student = /** @class */ (function () {
-    function student(n, a) {
-        this.name = n;
-        this.age = a;
-    }
-    student.prototype.return = function () {
-        return "".concat(this.name, " age is ").concat(this.age);
-    };
-    return student;
-}());
-var obj = new student("sam", 22);
-var obj1 = new student("peter", 30);
-console.log(obj.return());
-console.log(obj1.return());
-var arr = [];
-arr.push(obj);
-arr.push(obj1);
-console.log(arr);
+// class student 
+// {
+//     readonly name:string
+//     age:number
+//     constructor (n:string,a:number)
+//     {
+//         this.name=n
+//         this.age=a
+//     }
+//     return()
+//     {
+//             return `${this.name} age is ${this.age}`
+//     }
+// }
+// let obj = new student("sam",22)
+// let obj1 = new student("peter",30)
+// console.log(obj.return());
+// console.log(obj1.return());
+// let arr: student[]=[]
+// arr.push(obj)
+// arr.push(obj1)
+// console.log(arr);
+// obj.name = "tiger" // We can't assign any values because of readonly
+// *** (tuple) ***
+// let arr : [number]=[1,2,3,4,5]
+// let obj:[{},string[]]=[{
+//     name:"",
+//     age:""
+// },["hello"]]
+// console.log(obj);
+// let obj1:[number,string,boolean[],(number|boolean)[]] = [1,"hi",[true],[true,1]]
+// console.log(obj1);
+// *** (unknown type) ***
+// let a:unknown
+// let b=10
+// a=10
+// console.log(typeof a);
+// a="world"
+// console.log(typeof a);
+// // a.uppercase() //not possible
+// console.log((a as string).length);
+// a=true
+// console.log(typeof a);
+// *** (operators) ***
+//  arithmatic
+var a = 10;
+var b = 20;
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);
+console.log(Math.pow(a, b));
+console.log(a % b);
+//  assignment
+var c = 10;
+var d = 20;
+console.log(a = b);
+console.log(a += b);
+console.log(a -= b);
+console.log(a /= b);
+console.log(a = Math.pow(a, b));
+console.log(a %= b);
+//   Relational / comparision
+var e = 10;
+var f = 20;
+console.log(a > b);
+console.log(a < b);
+console.log(a >= b);
+console.log(a <= b);
+console.log(a == b);
+console.log(a === b);
+console.log(a != b);
+console.log(a !== b);
+//   ternary operators
+var g = 10;
+var h = 20;
+console.log(g > h ? true : false);
+//  logical operators
+var num = true;
+var num1 = false;
+console.log(num || num1);
+console.log(num && num1);
+console.log(!num1);
+console.log(!num);
