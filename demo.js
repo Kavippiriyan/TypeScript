@@ -224,26 +224,57 @@
 // console.log(number);
 //   Condtional statements  
 /* 1. if else  2. switch  3. ternary  */
-var num = 1000;
-var num2 = 0;
-var num3 = -1;
-var largest = num;
-var smallest = num;
-if (largest < num2 && num3 < num2) {
-    largest = num2;
+// let num = 1000 
+// let num2 =0 
+//  let num3 = -1
+// let largest = num
+// let smallest = num
+// if(largest<num2 && num3<num2)
+// {
+//     largest=num2
+// }
+// else if (largest<num3 && num3>num2)
+// {
+//     largest = num3
+// }
+// else if (smallest>num2 && num2<num3)
+// {
+//     smallest=num2
+// }
+// else if (smallest>num3 && num3<num2)
+// {
+//     smallest=num3
+// }
+// else
+// {
+//     smallest=num
+//     largest=num
+// }
+// console.log("smallest value : "+smallest);
+// console.log("largest value : "+largest);
+//   switch
+var username = "praveen";
+username = "kesavan";
+username = "naveen";
+username = "sankar";
+username = "arun";
+username = "mohan";
+switch (true) {
+    case (username.charAt(0) == "p"):
+        console.log("My name is praveen");
+        break;
+    case (username.charAt(0) == "k"):
+        console.log("My name is kesavan");
+        break;
+    case (username.charAt(0) == "s"):
+        console.log("My name is sankar");
+        break;
+    case (username.charAt(0) == "n"):
+        console.log("My name is naveen");
+        break;
+    case (username.charAt(0) == "a"):
+        console.log("My name is arun");
+        break;
+    default:
+        console.log("I'm mohan");
 }
-else if (largest < num3 && num3 > num2) {
-    largest = num3;
-}
-else if (smallest > num2 && num2 < num3) {
-    smallest = num2;
-}
-else if (smallest > num3 && num3 < num2) {
-    smallest = num3;
-}
-else {
-    smallest = num;
-    largest = num;
-}
-console.log("smallest value : " + smallest);
-console.log("largest value : " + largest);
