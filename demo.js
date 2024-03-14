@@ -193,3 +193,11 @@ console.log(num || num1);
 console.log(num && num1);
 console.log(!num1);
 console.log(!num);
+//  unary operators
+var x = 10;
+var variable = x++;
+console.log(x);
+console.log(variable);
+var variable1 = ++x;
+console.log(variable1);
+console.log(x);
