@@ -79,51 +79,80 @@
 
 
 
-let funct = () => {
-    console.log("Hello World");
+// let funct = () => {
+//     console.log("Hello World");
 
-}
+// }
 
-funct()
-
-
-let demo: Function
-
-demo = () => {
-    console.log("Good Evening");
-
-}
-demo()
-let test = (a: number, b: string) => {
-    return a + b
-}
-console.log(test(1, "way"));
+// funct()
 
 
-let practice = (a:number,b:number,c?:number)=>
-{
-    console.log(a+b+c);
+// let demo: Function
+
+// demo = () => {
+//     console.log("Good Evening");
+
+// }
+// demo()
+// let test = (a: number, b: string) => {
+//     return a + b
+// }
+// console.log(test(1, "way"));
+
+
+// let practice = (a:number,b:number,c?:number)=>
+// {
+//     console.log(a+b+c);
     
-}
+// }
 
-practice(1,2);
-practice(1,2,3);
+// practice(1,2);
+// practice(1,2,3);
 
 
 
-const fun = (a:number,b:number=10):number=>
-{
-    return(a+b);
+// const fun = (a:number,b:number=10):number=>
+// {
+//     return(a+b);
     
-}
-console.log(fun(1))
-console.log(fun(1,4))
+// }
+// console.log(fun(1))
+// console.log(fun(1,4))
 
 
-const fun1 = (a:number,b:string="hello"):void=>
-{
-    console.log(a+b);
+// const fun1 = (a:number,b:string="hello"):void=>
+// {
+//     console.log(a+b);
     
-}
-fun1(1)
-fun1(1,"hi")
+// }
+// fun1(1)
+// fun1(1,"hi")
+
+
+
+
+// *** (Aliases) ***  we can store the data types and used for reusability
+
+// type mark =number
+
+// let tamil :mark=100
+// let english:mark=79
+// let maths:mark=95
+// let science:mark=92
+// let social:mark=98
+
+               
+
+// console.log("totalmark : "+" "+(tamil+english+maths+science+social));
+
+
+// type name = string
+// type age = number|string
+
+// let fun = (fname:name,age:age)=>
+// {
+//     console.log(fname+" age is "+age);
+    
+// }
+
+// fun("kavippiriyan",22)
