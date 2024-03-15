@@ -334,7 +334,7 @@
 //     value+"world"
 // })
 // console.log(arr1);
-// ** (enum) **
+// ** (enum) **   We can store the constant values
 // enum user
 // {
 //     name,
@@ -362,14 +362,41 @@
 // console.log(user.name);
 // console.log(user.age);
 // console.log(user.address);
-var user;
-(function (user) {
-    user[user["name"] = 0] = "name";
-    user[user["age"] = userage()] = "age";
-    user["address"] = "naisyanur";
-})(user || (user = {}));
-console.log(user['address']);
-console.log(user['age']);
-function userage() {
-    return 22;
+// enum user 
+// {
+//     name,
+//     age = userage(),
+//     address = "naisyanur"
+// }
+// console.log(user['address']);
+// console.log(user['age']);
+// function userage():number
+// {
+//     return 22
+// }
+//  ** (foreach) **
+// let arr = [1,2,3,4,5]
+// let arr1 : Array <number> =[]
+// arr.forEach((value)=>
+// {
+//     if(value%2!=0)
+//     {
+//         arr1.push(value)
+//     }
+// })
+// console.log(arr1);
+// arr.forEach(value=>console.log(value));
+//  ** (map) **
+var array = ["Have", "a", "nice", "day", "to", "you"];
+var arr = array.map(function (value) {
+    if (value.length >= 3) {
+        return value;
+    }
+});
+console.log(arr);
+for (var i in arr) {
+    if (arr[i] === undefined) {
+        arr[i] = "*";
+    }
 }
+console.log(arr);
