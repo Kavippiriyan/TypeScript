@@ -313,14 +313,52 @@
 // }
 // console.log(join);
 //   ** (2d Array) **
-var arr = [[1, 2], [3, 4]];
-for (var i in arr) {
-    for (var j in arr[i]) {
-        console.log(arr[i][j]);
-    }
-}
-for (var i = 0; i < arr.length; i++) {
-    for (var j = 0; j < arr.length; j++) {
-        console.log(arr[i][j]);
-    }
-}
+// let arr : number[][]=[ [1,2],[3,4]]
+// for(let i in arr)
+// {
+//     for(let j in arr[i])
+//     {
+//         console.log(arr[i][j]);
+//     }
+// }
+// for(let i=0;i<arr.length;i++)
+// {
+//     for(let j=0;j<arr.length;j++)
+//     {
+//         console.log(arr[i][j]);
+//     }
+// }
+// let arr = [1,2,"hello"]
+// let arr1 = arr.forEach((value)=>
+// {
+//     value+"world"
+// })
+// console.log(arr1);
+// ** (enum) **
+// enum user
+// {
+//     name,
+//     age,
+//     address
+// }
+// console.log(user.name);
+// console.log(user.age);
+// console.log(user.address);
+// enum user
+// {
+//     name=1,
+//     age=10,
+//     address="nasiyanur"
+// }
+// console.log(user.name);
+// console.log(user.age);
+// console.log(user.address);
+var user;
+(function (user) {
+    user[user["name"] = 0] = "name";
+    user[user["age"] = 1] = "age";
+    user["address"] = "nasiyanur";
+})(user || (user = {}));
+console.log(user.name);
+console.log(user.age);
+console.log(user.address);

@@ -530,3 +530,49 @@
         
 //     }
 // }
+
+// let arr = [1,2,"hello"]
+
+// let arr1 = arr.forEach((value)=>
+// {
+//     value+"world"
+// })
+// console.log(arr1);
+
+
+// ** (enum) **
+
+// enum user
+// {
+//     name,
+//     age,
+//     address
+// }
+
+// console.log(user.name);
+// console.log(user.age);
+// console.log(user.address);
+
+
+// enum user
+// {
+//     name=1,
+//     age=10,
+//     address="nasiyanur"
+// }
+
+// console.log(user.name);
+// console.log(user.age);
+// console.log(user.address);
+
+
+// enum user
+// {
+//     name,
+//     age,
+//     address="nasiyanur"
+// }
+
+// console.log(user.name);
+// console.log(user.age);
+// console.log(user.address);
