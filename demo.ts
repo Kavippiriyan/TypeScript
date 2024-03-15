@@ -643,3 +643,44 @@
 
 //     console.log(arr);
     
+
+
+// ** (interface) **
+
+
+// interface add
+// {
+//     x:number
+//     y:number
+//     add():void
+// }
+
+// interface sub extends add
+// {
+//     a:number
+//     b:number
+//     sub():void
+// }
+
+// class join implements sub
+// {
+//     x = 10
+//     y=20
+//     a=20
+//     b=20
+//    add()
+//    {
+//     console.log("add : " ,this.x+this.y);
+    
+//    }
+//    sub()
+//    {
+//     console.log("sub : ",this.a-this.b);
+    
+//    }
+
+// }
+
+// let obj = new join()
+// obj.add()
+// obj.sub()
