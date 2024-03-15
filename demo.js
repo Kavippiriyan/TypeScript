@@ -291,5 +291,36 @@
 //     console.log(i);
 //     i++
 // }while(i<=10)
-for (var i = 0; i <= 10; i++) {
+// for(let i=0;i<=10;i++)
+// {
+//     if(i==8)
+//     {
+//         console.log("I'm ",i," years old");
+//         continue;
+//     }
+//     console.log("i am ",i+" years old");
+// }
+// let str = "Good Morning How All Of You!"
+// let split = str.split(" ")
+// let join : string[]=[]
+// for(let i=0; i<split.length;i++)
+// {
+//     if(split[i]=="How")
+//     {
+//         break;
+//     }
+//    join.push(split[i])
+// }
+// console.log(join);
+//   ** (2d Array) **
+var arr = [[1, 2], [3, 4]];
+for (var i in arr) {
+    for (var j in arr[i]) {
+        console.log(arr[i][j]);
+    }
+}
+for (var i = 0; i < arr.length; i++) {
+    for (var j = 0; j < arr.length; j++) {
+        console.log(arr[i][j]);
+    }
 }
