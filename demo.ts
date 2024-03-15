@@ -540,7 +540,7 @@
 // console.log(arr1);
 
 
-// ** (enum) **
+// ** (enum) **   We can store the constant values here
 
 // enum user
 // {
@@ -576,3 +576,21 @@
 // console.log(user.name);
 // console.log(user.age);
 // console.log(user.address);
+
+
+
+enum user 
+{
+    name,
+    age = userage(),
+    address = "naisyanur"
+}
+
+console.log(user['address']);
+console.log(user['age']);
+
+
+function userage():number
+{
+    return 22
+}

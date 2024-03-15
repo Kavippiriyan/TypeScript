@@ -353,12 +353,23 @@
 // console.log(user.name);
 // console.log(user.age);
 // console.log(user.address);
+// enum user
+// {
+//     name,
+//     age,
+//     address="nasiyanur"
+// }
+// console.log(user.name);
+// console.log(user.age);
+// console.log(user.address);
 var user;
 (function (user) {
     user[user["name"] = 0] = "name";
-    user[user["age"] = 1] = "age";
-    user["address"] = "nasiyanur";
+    user[user["age"] = userage()] = "age";
+    user["address"] = "naisyanur";
 })(user || (user = {}));
-console.log(user.name);
-console.log(user.age);
-console.log(user.address);
+console.log(user['address']);
+console.log(user['age']);
+function userage() {
+    return 22;
+}
