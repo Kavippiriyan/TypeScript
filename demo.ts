@@ -198,30 +198,31 @@
 
 
 
-let set = new Set()
+// let set = new Set()
 
-set.add("Hello")
-set.add("Welcome Buddy!")
-set.add(0)
-console.log(set);
+// set.add("Hello")
+// set.add("Welcome Buddy!")
+// set.add(0)
+// console.log(set);
 
- set.forEach(value=>
-    {
-       console.log(value);
+//  set.forEach(value=>
+//     {
+//        console.log(value);
        
-    })
+//     })
 
 
 
-console.log(set.has(0));
-// console.log(set.clear());
+// console.log(set.has(0));
+// // console.log(set.clear());
 
-console.log(set.delete(0));
-console.log(set);
+// console.log(set.delete(0));
+// console.log(set);
 
-console.log(set.entries());
-console.log(set.values());
-console.log(set.size);
+// console.log(set.entries());
+// console.log(set.values());
+// console.log(set.size);
+
 
 
 
