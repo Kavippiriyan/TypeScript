@@ -1,3 +1,32 @@
+// module
+// import { student1 } from "./module";
+// let obj = new student1()
+// console.log(obj.name);
+// console.log(obj.age);
+// console.log(obj.work);
+//  **** (Namespace) ****
+var players;
+(function (players_1) {
+    var players = /** @class */ (function () {
+        function players(a, b, c) {
+            this.players = {
+                player1: "Rohit",
+                player2: "Kholi",
+                player3: "Dhoni",
+            };
+            this.fun = function () {
+                console.log(this.players.player1, " ", this.pl1skill);
+                console.log(this.players.player2, " ", this.pl2skill);
+                console.log(this.players.player3, " ", this.pl3skill);
+            };
+            this.pl1skill = a;
+            this.pl2skill = b;
+            this.pl3skill = c;
+        }
+        return players;
+    }());
+    players_1.players = players;
+})(players || (players = {}));
 // // ***(objects)***
 // let obj = {
 //     name:"kavi",
@@ -46,3 +75,8 @@
 //     console.log(a+b);
 // }
 // fun(true," soul")
+// import { players } from './demo' // this is for module
+///<reference path='demo.ts'/> 
+//next we have to give = tsc namespace.ts --outFile demo.ts
+var object = new players.players("I'm Hitman", "I'm Fire", "I'm cool");
+object.fun();
