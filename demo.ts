@@ -10,39 +10,78 @@
 // console.log(obj.age);
 // console.log(obj.work);
 
+// -----------------------------------------------------------------------------------------
+
+// import {months,fruit,one,varibale} from './module'
+
+
+
+// one();
+// console.log(varibale);
+
+// interface fruit2 extends fruit
+// {
+//     fname1:string
+//     color1:string
+//     quantity1:string
+// }
+
+// var fruitlist:fruit2=
+// {
+//     fname:"Cucumber",
+//     fname1:"Mango",
+//     color:"green",
+//     color1:"yellow",
+//     quantity:"200",
+//     quantity1:"100"
+
+
+// }
+
+// console.log(fruitlist.fname," : ",fruitlist.color," : ",fruitlist.quantity);
+// console.log(fruitlist.fname1," : ",fruitlist.color1," : ",fruitlist.quantity1);
+
+
+// const object = new months()
+
+// console.log(object.month1);
+// console.log(object.month2);
+// console.log(object.month3);
+
+// ----------------------------------------------------------------------------------
 
 //  **** (Namespace) ****
 
-namespace players{
+// namespace players{
 
-export class players
-{
-     players = 
-     {
-        player1:"Rohit",
-        player2:"Kholi",
-        player3:"Dhoni",
+// export class players
+// {
+//      players = 
+//      {
+//         player1:"Rohit",
+//         player2:"Kholi",
+//         player3:"Dhoni",
 
-     }
-     pl1skill:string
-     pl2skill:string
-     pl3skill:string
+//      }
+//      pl1skill:string
+//      pl2skill:string
+//      pl3skill:string
 
-     constructor (a:string,b:string,c:string)
-     {
-        this.pl1skill = a
-        this.pl2skill = b
-        this.pl3skill = c
-     }
+//      constructor (a:string,b:string,c:string)
+//      {
+//         this.pl1skill = a
+//         this.pl2skill = b
+//         this.pl3skill = c
+//      }
 
-     fun = function ()
-     {
-        console.log(this.players.player1," ",this.pl1skill)
-        console.log(this.players.player2," ",this.pl2skill)
-        console.log(this.players.player3," ",this.pl3skill)
-     }
-}
-}
+//      fun = function ()
+//      {
+//         console.log(this.players.player1," ",this.pl1skill)
+//         console.log(this.players.player2," ",this.pl2skill)
+//         console.log(this.players.player3," ",this.pl3skill)
+//      }
+// }
+// }
 
 
 // // ***(objects)***
