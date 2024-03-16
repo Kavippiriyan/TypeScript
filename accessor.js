@@ -32,8 +32,3 @@
 // console.log("Get value "+object.X);
 // object.X = 30;
 // console.log("Set value "+object.X);
-// import { student1 } from "./module";
-// let obj = new student1()
-// console.log(obj.name);
-// console.log(obj.age);
-// console.log(obj.work);
