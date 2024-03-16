@@ -83,6 +83,28 @@
 // }
 // }
 
+// ------------------------------------------------------------------------------------
+
+
+// export var favourtiecolor = "green"
+
+// export function math()
+// {
+//     console.log(Math.floor(50.265));
+    
+// }
+
+// export interface languages
+// {
+//     l1:string
+//     l2:string
+//     l3:string
+// }
+
+
+
+
+// -------------------------------------------------------------------------------------
 
 // // ***(objects)***
 
@@ -176,11 +198,30 @@
 
 
 
+let set = new Set()
+
+set.add("Hello")
+set.add("Welcome Buddy!")
+set.add(0)
+console.log(set);
+
+ set.forEach(value=>
+    {
+       console.log(value);
+       
+    })
 
 
 
+console.log(set.has(0));
+// console.log(set.clear());
 
+console.log(set.delete(0));
+console.log(set);
 
+console.log(set.entries());
+console.log(set.values());
+console.log(set.size);
 
 
 

@@ -1,28 +1,35 @@
-"use strict";
 // module
-Object.defineProperty(exports, "__esModule", { value: true });
 // import { student1 } from "./module";
 // let obj = new student1()
 // console.log(obj.name);
 // console.log(obj.age);
 // console.log(obj.work);
-var module_1 = require("./module");
-(0, module_1.one)();
-console.log(module_1.varibale);
-var fruitlist = {
-    fname: "Cucumber",
-    fname1: "Mango",
-    color: "green",
-    color1: "yellow",
-    quantity: "200",
-    quantity1: "100"
-};
-console.log(fruitlist.fname, " : ", fruitlist.color, " : ", fruitlist.quantity);
-console.log(fruitlist.fname1, " : ", fruitlist.color1, " : ", fruitlist.quantity1);
-var object = new module_1.months();
-console.log(object.month1);
-console.log(object.month2);
-console.log(object.month3);
+// -----------------------------------------------------------------------------------------
+// import {months,fruit,one,varibale} from './module'
+// one();
+// console.log(varibale);
+// interface fruit2 extends fruit
+// {
+//     fname1:string
+//     color1:string
+//     quantity1:string
+// }
+// var fruitlist:fruit2=
+// {
+//     fname:"Cucumber",
+//     fname1:"Mango",
+//     color:"green",
+//     color1:"yellow",
+//     quantity:"200",
+//     quantity1:"100"
+// }
+// console.log(fruitlist.fname," : ",fruitlist.color," : ",fruitlist.quantity);
+// console.log(fruitlist.fname1," : ",fruitlist.color1," : ",fruitlist.quantity1);
+// const object = new months()
+// console.log(object.month1);
+// console.log(object.month2);
+// console.log(object.month3);
+// ----------------------------------------------------------------------------------
 //  **** (Namespace) ****
 // namespace players{
 // export class players
@@ -50,6 +57,19 @@ console.log(object.month3);
 //      }
 // }
 // }
+// ------------------------------------------------------------------------------------
+// export var favourtiecolor = "green"
+// export function math()
+// {
+//     console.log(Math.floor(50.265));
+// }
+// export interface languages
+// {
+//     l1:string
+//     l2:string
+//     l3:string
+// }
+// -------------------------------------------------------------------------------------
 // // ***(objects)***
 // let obj = {
 //     name:"kavi",
@@ -98,3 +118,18 @@ console.log(object.month3);
 //     console.log(a+b);
 // }
 // fun(true," soul")
+var set = new Set();
+set.add("Hello");
+set.add("Welcome Buddy!");
+set.add(0);
+console.log(set);
+set.forEach(function (value) {
+    console.log(value);
+});
+console.log(set.has(0));
+// console.log(set.clear());
+console.log(set.delete(0));
+console.log(set);
+console.log(set.entries());
+console.log(set.values());
+console.log(set.size);
