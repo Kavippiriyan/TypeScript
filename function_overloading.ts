@@ -12,3 +12,4 @@ function add(x: any, y: any): any {
 
 console.log(add("kavippiriyan", "S"));
 console.log(add(1, 2));
+
