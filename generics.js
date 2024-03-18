@@ -89,17 +89,20 @@
 // let obj = new A(100, 20, 8)
 // obj.print()
 // constrains
-var a = /** @class */ (function () {
-    function a(a) {
-        this.a = a;
-    }
-    a.prototype.greet = function () {
-        console.log("Welcome");
-        console.log(this.a);
-    };
-    return a;
-}());
-var obj = new a(["Kavippiriyan"]);
-obj.greet();
-var obj1 = new a([1]);
-obj1.greet();
+// class a<T extends object>
+// {
+//     greet():void
+//     {
+//         console.log("Welcome");
+//         console.log(this.a);
+//     }
+//     a:T
+//     constructor(a:T)
+//     {
+//         this.a=a
+//     }
+// }
+// let obj = new a(["Kavippiriyan"])
+// obj.greet()
+// let obj1 = new a([1])
+// obj1.greet()
