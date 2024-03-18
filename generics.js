@@ -53,29 +53,53 @@
 // console.log(arrfun("3","5"));
 // -------------------------------------------------------------------------------------------------------
 // array
-var array = function (arr) {
-    return arr;
-};
-console.log(array([1, 2, 3, 4, 5]));
-var values = {
-    stname: "Kavippiriyan",
-    age: 22
-};
-console.log(values.stname);
-console.log(values.age);
+// let array = <T>(arr: T[]) => {
+//     return arr
+// }
+// console.log(array<number>([1, 2, 3, 4, 5]));
+// interface
+// interface students<S, N> {
+//     stname: S
+//     age: N
+// }
+// let values: students<string, Number> =
+// {
+//     stname: "Kavippiriyan",
+//     age: 22
+// }
+// console.log(values.stname);
+// console.log(values.age);
 //  class
-var A = /** @class */ (function () {
-    function A(a, b, c) {
-        this.TotalStudents = a;
-        this.Totalstaff = b;
-        this.TotalHours = c;
+// class A<T>
+// {
+//     Totalstaff: T
+//     TotalStudents: T
+//     TotalHours: T
+//     constructor(a: T, b: T, c: T) {
+//         this.TotalStudents = a
+//         this.Totalstaff = b
+//         this.TotalHours = c
+//     }
+//     print(): void {
+//         console.log(this.TotalStudents);
+//         console.log(this.Totalstaff);
+//         console.log(this.TotalHours);
+//     }
+// }
+// let obj = new A(100, 20, 8)
+// obj.print()
+// constrains
+var a = /** @class */ (function () {
+    function a(a) {
+        this.a = a;
     }
-    A.prototype.print = function () {
-        console.log(this.TotalStudents);
-        console.log(this.Totalstaff);
-        console.log(this.TotalHours);
+    a.prototype.greet = function () {
+        console.log("Welcome");
+        console.log(this.a);
     };
-    return A;
+    return a;
 }());
-var obj = new A(100, 20, 8);
-obj.print();
+var obj = new a(["Kavippiriyan"]);
+obj.greet();
+var obj1 = new a([1]);
+obj1.greet();

@@ -94,54 +94,77 @@
 
 // array
 
-let array = <T>(arr: T[]) => {
-    return arr
-}
-console.log(array<number>([1, 2, 3, 4, 5]));
+// let array = <T>(arr: T[]) => {
+//     return arr
+// }
+// console.log(array<number>([1, 2, 3, 4, 5]));
 
 // interface
 
-interface students<S, N> {
-    stname: S
-    age: N
+// interface students<S, N> {
+//     stname: S
+//     age: N
 
-}
-let values: students<string, Number> =
-{
-    stname: "Kavippiriyan",
-    age: 22
-}
-console.log(values.stname);
-console.log(values.age);
+// }
+// let values: students<string, Number> =
+// {
+//     stname: "Kavippiriyan",
+//     age: 22
+// }
+// console.log(values.stname);
+// console.log(values.age);
 
 
 //  class
 
-class A<T>
-{
-    Totalstaff: T
-    TotalStudents: T
-    TotalHours: T
+// class A<T>
+// {
+//     Totalstaff: T
+//     TotalStudents: T
+//     TotalHours: T
 
-    constructor(a: T, b: T, c: T) {
-        this.TotalStudents = a
-        this.Totalstaff = b
-        this.TotalHours = c
-    }
+//     constructor(a: T, b: T, c: T) {
+//         this.TotalStudents = a
+//         this.Totalstaff = b
+//         this.TotalHours = c
+//     }
 
-    print(): void {
-        console.log(this.TotalStudents);
-        console.log(this.Totalstaff);
-        console.log(this.TotalHours);
+//     print(): void {
+//         console.log(this.TotalStudents);
+//         console.log(this.Totalstaff);
+//         console.log(this.TotalHours);
 
-    }
+//     }
 
-}
+// }
 
-let obj = new A(100, 20, 8)
+// let obj = new A(100, 20, 8)
 
-obj.print()
-
-
+// obj.print()
 
 
+// constrains
+
+// class a<T extends object>
+// {
+//     greet():void
+//     {
+//         console.log("Welcome");
+//         console.log(this.a);
+        
+        
+//     }
+//     a:T
+//     constructor(a:T)
+//     {
+//         this.a=a
+
+//     }
+
+// }
+
+// let obj = new a(["Kavippiriyan"])
+// obj.greet()
+
+// let obj1 = new a([1])
+// obj1.greet()
