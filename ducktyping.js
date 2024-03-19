@@ -1,3 +1,4 @@
+"use strict";
 // interface employee {
 //     name: string
 //     age: number
@@ -22,22 +23,18 @@
 // emp = emp1
 // console.log(emp.name);
 // console.log(emp.city); // we can't access city because it is not mentioned in interface
-var a = /** @class */ (function () {
-    function a() {
-        this.name = "hello";
-    }
-    return a;
-}());
-var b = /** @class */ (function () {
-    function b() {
-        this.name = "hi";
-        // name = 20  // this is not possible to add
-        this.age = 20;
-    }
-    return b;
-}());
-var obj = new a();
-var obj1 = new b();
-console.log(obj.name);
-obj = obj1;
-console.log(obj.name);
+// class a
+// {
+//     name = "hello"
+// }
+// class b
+// {
+//     name = "hi"
+//     // name = 20  // this is not possible to add
+//     age = 20
+// }
+// let obj = new a()
+// let obj1 = new b()
+// console.log(obj.name);
+// obj=obj1
+// console.log(obj.name);

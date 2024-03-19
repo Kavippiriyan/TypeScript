@@ -1,3 +1,4 @@
+"use strict";
 // -----  Type assertion ----
 // let word = 'Hello World';
 // console.log(word.charAt(1));

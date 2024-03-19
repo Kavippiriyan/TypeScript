@@ -1,3 +1,4 @@
+"use strict";
 //  *** (switch) ***
 // var username = "praveen"
 // username = "kesavan"

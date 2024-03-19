@@ -1,3 +1,4 @@
+"use strict";
 //  ** (string) **
 // var word = "Good Evening"
 // var word1 = " all"

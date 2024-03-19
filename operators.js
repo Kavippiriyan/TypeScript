@@ -1,3 +1,4 @@
+"use strict";
 // *** (operators) ***
 //  arithmatic
 // let a=10

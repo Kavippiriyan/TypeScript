@@ -1,3 +1,4 @@
+"use strict";
 // let arr : Array<string>
 // arr = ["Good","Morning"]
 // console.log(arr);

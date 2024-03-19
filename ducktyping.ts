@@ -32,20 +32,20 @@
 // console.log(emp.city); // we can't access city because it is not mentioned in interface
 
 
-class a
-{
-    name = "hello"
-}
+// class a
+// {
+//     name = "hello"
+// }
 
-class b
-{
-    name = "hi"
-    // name = 20  // this is not possible to add
-    age = 20
-}
+// class b
+// {
+//     name = "hi"
+//     // name = 20  // this is not possible to add
+//     age = 20
+// }
 
-let obj = new a()
-let obj1 = new b()
-console.log(obj.name);
-obj=obj1
-console.log(obj.name);
+// let obj = new a()
+// let obj1 = new b()
+// console.log(obj.name);
+// obj=obj1
+// console.log(obj.name);

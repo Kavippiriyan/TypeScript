@@ -1,3 +1,4 @@
+"use strict";
 // ------   get,  set  ------
 // class test
 // {

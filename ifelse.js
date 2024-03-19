@@ -1,3 +1,4 @@
+"use strict";
 // **** (Condtional statements  ) ****
 /* 1. if else  2. switch  3. ternary  */
 // let num = 1000 

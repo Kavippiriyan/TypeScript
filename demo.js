@@ -1,3 +1,4 @@
+"use strict";
 // module
 // import { student1 } from "./module";
 // let obj = new student1()
@@ -118,18 +119,19 @@
 //     console.log(a+b);
 // }
 // fun(true," soul")
-var set = new Set();
-set.add("Hello");
-set.add("Welcome Buddy!");
-set.add(0);
-console.log(set);
-set.forEach(function (value) {
-    console.log(value);
-});
-console.log(set.has(0));
-// console.log(set.clear());
-console.log(set.delete(0));
-console.log(set);
-console.log(set.entries());
-console.log(set.values());
-console.log(set.size);
+// let set = new Set()
+// set.add("Hello")
+// set.add("Welcome Buddy!")
+// set.add(0)
+// console.log(set);
+//  set.forEach(value=>
+//     {
+//        console.log(value);
+//     })
+// console.log(set.has(0));
+// // console.log(set.clear());
+// console.log(set.delete(0));
+// console.log(set);
+// console.log(set.entries());
+// console.log(set.values());
+// console.log(set.size);

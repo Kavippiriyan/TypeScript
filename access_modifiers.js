@@ -1,3 +1,4 @@
+"use strict";
 // --- access modifiers ---
 // class test
 // {
