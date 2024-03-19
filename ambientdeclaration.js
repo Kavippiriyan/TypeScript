@@ -1,3 +1,4 @@
+"use strict";
 // import { students,emp,uname } from './dts';
 // let stname:students =
 // {

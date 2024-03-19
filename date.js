@@ -1,13 +1,13 @@
 "use strict";
 //  date-month-year
-let dateobj = new Date();
-let date = dateobj.getDate();
-let month = dateobj.getMonth();
-let year = dateobj.getFullYear();
-console.log(`${date}/${month}/${year}`);
+var dateobj = new Date();
+var date = dateobj.getDate();
+var month = dateobj.getMonth();
+var year = dateobj.getFullYear();
+console.log("".concat(date, "/").concat(month, "/").concat(year));
 // hour-minute-seconds
-let timeobj = new Date();
-let hour = timeobj.getHours();
-let minute = timeobj.getMinutes();
-let seconds = timeobj.getSeconds();
-console.log(`${hour}/${minute}/${seconds}`);
+var timeobj = new Date();
+var hour = timeobj.getHours();
+var minute = timeobj.getMinutes();
+var seconds = timeobj.getSeconds();
+console.log("".concat(hour, "/").concat(minute, "/").concat(seconds));
