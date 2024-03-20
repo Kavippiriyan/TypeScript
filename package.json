@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "duo-typescript": "^1.4.6",
+    "tsify": "^5.0.4"
+  }
+}
